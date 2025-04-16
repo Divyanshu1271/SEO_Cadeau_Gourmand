@@ -1,0 +1,127 @@
+/* style.css for Cadeau Gourmand SEO site */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.site-header {
+  background-color: #8B0000;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #ffd700;
+}
+
+.content {
+  padding: 40px 20px;
+  max-width: 960px;
+  margin: auto;
+}
+
+.content h1 {
+  font-size: 2.2rem;
+  color: #8B0000;
+  margin-bottom: 0.5em;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 1em;
+}
+
+.content h3 {
+  font-size: 1.25rem;
+  color: #555;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.content ul, .content ol {
+  padding-left: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.content ul li, .content ol li {
+  margin-bottom: 0.5em;
+}
+
+blockquote {
+  font-style: italic;
+  color: #555;
+  margin: 1em 0;
+  padding-left: 1em;
+  border-left: 3px solid #ccc;
+}
+
+.site-footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .site-header {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 20px 15px;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .main-nav a {
+    font-size: 0.95rem;
+  }
+}
