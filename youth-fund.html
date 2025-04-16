@@ -6,6 +6,10 @@
   <meta name="description" content="Scholarships, innovation grants, and mentorship programs across Canada. Learn how the Youth Fund empowers the next generation.">
   <title>Empowering Youth Through Funding</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DKTQE7FKF7"></script>
   <script>
@@ -18,7 +22,8 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="logo">Cadeau Gourmand</div>
+    <div class="logo"><a href="index.html">Cadeau Gourmand</a></div>
+    <button class="menu-toggle">&#9776;</button>
     <nav class="main-nav">
       <ul>
         <li><a href="index.html">Gourmet Gift</a></li>
@@ -28,6 +33,7 @@
         <li><a href="customer-reviews.html">Customer Reviews</a></li>
       </ul>
     </nav>
+    
   </header>
 
   <main class="content">
@@ -92,5 +98,14 @@
   <footer class="site-footer">
     <p>&copy; 2025 Cadeau Gourmand. All rights reserved.</p>
   </footer>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+  
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+  
 </body>
 </html>
